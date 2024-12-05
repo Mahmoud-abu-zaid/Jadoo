@@ -1,14 +1,95 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: "Poppins", serif;
 }
-:root{
---black:#000000;
---charleston-green:#212832;
---jelly-bean:#DF6951;
---space-cadet:#181E4B;
---Dark-electric-blue:#5E6282;
---orange-web:#F1A501;
---yankees-blue:#14183E;
+:root {
+  --black: #000000;
+  --white:#ffffff;
+  --charleston-green: #212832;
+  --jelly-bean: #df6951;
+  --space-cadet: #181e4b;
+  --Dark-electric-blue: #5e6282;
+  --orange-web: #f1a501;
+  --yankees-blue: #14183e;
+}
+a {
+  text-decoration: none;
+}
+header {
+  padding: 20px 50px;
+}
+header .continer {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+nav{
+  position: relative;
+}
+
+
+ul li a {
+  color: var(--charleston-green);
+  font-size: 17px;
+  font-weight: 400;
+}
+ul .sign-up {
+  background-color: #00000000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav label{
+  cursor: pointer;
+}
+nav input {
+  appearance: none;
+}
+header nav input:checked + ul {
+  display: block;
+}
+select {
+  margin-left: 30px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 992px) {
+  nav ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 20;
+    right: 0;
+  background-color: var(--white);
+  }
+  ul li {
+    padding: 8px 25px;
+    border-bottom:1px solid #e6e6e6 ;
+  }
+}
+@media (min-width: 992px) {
+  nav label,
+  nav input {
+    display: none;
+    
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    
+  }
+  nav ul li {
+    padding: 0px 20px;
+    
+  }
+
+}
+
+@media (max-width: 1200px) {
 }
