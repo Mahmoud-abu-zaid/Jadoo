@@ -1,0 +1,14 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root{
+--black:#000000;
+--charleston-green:#212832;
+--jelly-bean:#DF6951;
+--space-cadet:#181E4B;
+--Dark-electric-blue:#5E6282;
+--orange-web:#F1A501;
+--yankees-blue:#14183E;
+}
