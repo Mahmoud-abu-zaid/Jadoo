@@ -6,13 +6,22 @@
 }
 :root {
   --black: #000000;
-  --white:#ffffff;
+  --white: #ffffff;
   --charleston-green: #212832;
   --jelly-bean: #df6951;
   --space-cadet: #181e4b;
   --Dark-electric-blue: #5e6282;
   --orange-web: #f1a501;
   --yankees-blue: #14183e;
+  --dark-silver:#686D77;
+}
+
+body {
+  background-image: url("../images/blob.webp");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-x: right;
+  z-index: -2;
 }
 a {
   text-decoration: none;
@@ -26,11 +35,9 @@ header .continer {
   position: sticky;
   top: 0;
 }
-nav{
+nav {
   position: relative;
 }
-
-
 ul li a {
   color: var(--charleston-green);
   font-size: 17px;
@@ -39,9 +46,11 @@ ul li a {
 ul .sign-up {
   background-color: #00000000;
   border-radius: 5px;
+  border: 1px solid var(--charleston-green);
+  padding: 5px 10px;
   cursor: pointer;
 }
-nav label{
+nav label {
   cursor: pointer;
 }
 nav input {
@@ -55,9 +64,7 @@ select {
   border: none;
   text-align: center;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
+  background-color: #00000000;
 }
 @media (max-width: 992px) {
   nav ul {
@@ -66,30 +73,125 @@ select {
     position: absolute;
     top: 20;
     right: 0;
-  background-color: var(--white);
+    background-color: var(--white);
   }
   ul li {
     padding: 8px 25px;
-    border-bottom:1px solid #e6e6e6 ;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  ul .sign-up {
+    border: none;
+    padding: 0px;
   }
 }
 @media (min-width: 992px) {
   nav label,
   nav input {
     display: none;
-    
   }
   nav ul {
     display: flex;
     list-style: none;
-    
   }
   nav ul li {
     padding: 0px 20px;
-    
   }
-
 }
 
+.page1 .continer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px 40px;
+}
+
+.content-page1 h2 {
+  font-family: "Volkhov", serif;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 89px;
+  font-family: Volkhov;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 89px;
+  letter-spacing: -0.04em;
+  color: var(--space-cadet);
+}
+.content-page1 h2 .enjoy {
+  font-family: "Volkhov", serif;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 89px;
+  font-family: Volkhov;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 89px;
+  letter-spacing: -0.04em;
+  color: var(--space-cadet);
+  position: relative;
+}
+.content-page1 h2 .enjoy::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/Decore.png);
+  height: 8px;
+  width: 350px;
+  left: -35px;
+  bottom: 10px;
+  z-index: -1;
+}
+.content-p1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 20px 0px;
+  color: var(--jelly-bean);
+}
+.content-p2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 20px 0px;
+  color: var(--Dark-electric-blue);
+}
+.img-page1 img {
+  width: 765px;
+  height: 764px;
+}
 @media (max-width: 1200px) {
+  .img-page1 img {
+    width: 580px;
+    height: 580px;
+  }
+}
+@media (max-width: 992px) {
+  body{
+    background-size: 50%;
+  }
+  .img-page1 img {
+   display: none;
+  }
+}
+.btn-link{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.btn-link input{
+  margin-top: 15px;
+  margin-right: 70px;
+  padding: 10px 20px;
+  background-color: var(--orange-web);
+  border:none ;
+  width: 170px;
+height: 60px;
+border-radius: 10px;
+color: var(--white);
+
+}
+.btn-link a{
+  margin-top: 28px;
+  width: 100px;
+  color: var(--charleston-green);
 }
