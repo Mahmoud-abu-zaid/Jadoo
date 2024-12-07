@@ -130,6 +130,7 @@ select {
   letter-spacing: -0.04em;
   color: var(--space-cadet);
   position: relative;
+  z-index: -1;
 }
 .content-page1 h2 .enjoy::after {
   content: "";
@@ -139,7 +140,7 @@ select {
   width: 350px;
   left: -35px;
   bottom: 10px;
-  z-index: -1;
+  z-index: -10;
 }
 .content-p1 {
   font-size: 20px;
@@ -160,9 +161,12 @@ select {
   height: 764px;
 }
 @media (max-width: 1200px) {
+  .page1 .continer {
+    padding: 0px 30px;
+  }
   .img-page1 img {
-    width: 580px;
-    height: 580px;
+    width: 560px;
+    height: 560px;
   }
 }
 @media (max-width: 992px) {
@@ -170,7 +174,49 @@ select {
     background-size: 50%;
   }
   .img-page1 img {
+    width: 400px;
+    height: 400px;
+  }
+  .content-page1 h2 {
+    font-size: 70px;
+  }
+  .content-page1 h2 .enjoy {
+    font-size: 70px;
+  }
+  .content-page1 h2 .enjoy::after {
+    width: 280px;
+  }
+}
+@media (max-width: 850px) {
+  .img-page1 img {
     display: none;
+  }
+  .content-page1 h2 {
+    font-size: 60px;
+  }
+  .content-page1 h2 .enjoy {
+    font-size: 60px;
+  }
+}
+@media (max-width: 765px) {
+  .img-page1 img .page1 .continer {
+    padding: 0px 20px;
+  }
+  .content-page1 h2 {
+    font-size: 60px;
+  }
+  .img-page1 img {
+    display: none;
+  }
+  .content-page1 h2 .enjoy {
+    font-size: 60px;
+  }
+  .content-page1 h2 .enjoy::after {
+    width: 170px;
+    border-radius: 25px;
+  }
+  .title-page2 h2 {
+    font-size: 35px;
   }
 }
 .btn-link {
@@ -220,12 +266,12 @@ select {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  height: 50vh;
+  flex-grow: 1;
 }
 
 .offer-services figure .best-filghts {
   width: 267px;
-  height: 314px;
+  height: 330px;
   border-radius: 36px;
   background-color: var(--white);
   box-shadow: 10px 38.52px 25.48px 20px #00000008;
@@ -240,11 +286,12 @@ select {
   height: 100px;
   z-index: -1;
   left: -35px;
-  bottom: -30px;
+  bottom: -40px;
 }
 .offer-services figure figcaption {
   width: 267px;
   position: relative;
+  padding-top: 30px;
 }
 .offer-services figure figcaption h3 {
   font-family: "Open Sans", sans-serif;
@@ -281,8 +328,8 @@ select {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: -5px;
-  right: 30px;
+  top: 10px;
+  right: px;
   z-index: -1;
 }
 .Customization::after {
@@ -295,4 +342,110 @@ select {
   top: 10px;
   right: 40px;
   z-index: -1;
+}
+@media (max-width: 765px) {
+  .title-page2 h2 {
+    font-size: 35px;
+  }
+  .title-page2 img {
+    width: 70px;
+  }
+}
+
+.continter {
+  padding: 50px 20px;
+}
+.title-page3 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.title-page3 p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: var(--Dark-electric-blue);
+}
+.title-page3 h3 {
+  font-family: Volkhov;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64.5px;
+  color: var(--yankees-blue);
+}
+.contry {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.contry div img {
+  width: 314px;
+  height: 457px;
+}
+.contry .prodects {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 100px 80px 0px #0000001c;
+}
+.for-reservation {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0px;
+  width: 100%;
+  background-color: var(--white);
+  height: 150px;
+  z-index: 10;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.for-reservation {
+  padding-top: 20px;
+}
+.for-reservation .praice-and-contry {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+.for-reservation .praice-and-contry a {
+  color: var(--Dark-electric-blue);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.41px;
+}
+.deys a {
+  color: var(--Dark-electric-blue);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.41px;
+}
+.deys {
+  padding-top: 50px;
+  text-align: start;
+}
+.icons-arrow {
+  font-size: 18px;
+  padding: 0px 20px;
+  color: var(--black);
+}
+.prodect-end {
+  position: relative;
+}
+.prodect-end::after {
+  content: "";
+  background-image: url(../images/Decore.webp);
+  width: 80px;
+  height: 75%;
+  right: -55px;
+  z-index: -1;
+  position: absolute;
+}
+@media (max-width: 1200px) {
+  .contry .prodects {
+    margin: 20px;
+  }
+}
+@media (max-width: 992px) {
 }
