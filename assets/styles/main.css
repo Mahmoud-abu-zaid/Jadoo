@@ -14,6 +14,9 @@
   --orange-web: #f1a501;
   --yankees-blue: #14183e;
   --dark-silver: #686d77;
+  --roman-silver: #84829a;
+  --cultured: #f5f5f5;
+  --medium-purple:#8A79DF;
 }
 
 body {
@@ -386,7 +389,7 @@ select {
 .contry .prodects {
   position: relative;
   border-radius: 20px;
-  box-shadow: 0px 100px 80px 0px #0000001c;
+  box-shadow: 0px 100px 80px 0px #00000011;
 }
 .for-reservation {
   position: absolute;
@@ -448,4 +451,164 @@ select {
   }
 }
 @media (max-width: 992px) {
+}
+
+.page4 .continer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 40px;
+}
+
+.title h3 {
+  font-family: Volkhov;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64.5px;
+  width: 500px;
+  color: var(--yankees-blue);
+  padding-bottom: 20px;
+}
+.title p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: var(--Dark-electric-blue);
+}
+.booking-flights .content {
+  display: flex;
+}
+.title-and-content {
+  width: 395px;
+}
+.choose1-destination,
+.choose2-destination,
+.choose3-destination {
+  position: relative;
+}
+.choose1-destination::after,
+.choose2-destination::after,
+.choose3-destination::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url(../icons/selection\ 1.png);
+  background-repeat: no-repeat;
+  left: 12px;
+  top: 13px;
+  bottom: 0px;
+}
+.choose2-destination::after {
+  background-image: url(../icons/taxi.png);
+}
+.choose3-destination::after {
+  background-image: url(../icons/water-sport\ 1.png);
+}
+
+.content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.92px;
+  color: var(--Dark-electric-blue);
+  padding-left: 8px;
+}
+.content p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.92px;
+  padding: 8px;
+  padding-bottom: 20px;
+  color: var(--Dark-electric-blue);
+}
+.trip-to-greece {
+  margin-top: 20px;
+  padding: 20px 25px;
+  border-radius: 20px;
+  box-shadow: 20px 10.81px 46.85px 10px #59b0e634;
+  position: relative;
+}
+.trip-to-greece h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.41px;
+  padding: 10px 0px;
+}
+.trip-to-greece .June29-14 {
+  border-right: 1px solid var(--roman-silver);
+  padding-right: 5px;
+}
+.trip-to-greece a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.92px;
+  letter-spacing: -0.005em;
+  color: var(--roman-silver);
+}
+.trip-to-greece .by-Robbin-joseph {
+  padding-left: 5px;
+}
+.three-icons .icons {
+  padding: 5px;
+  background-color: var(--cultured);
+  border-radius: 20px;
+}
+.trip-to-greece .people-24 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.92px;
+  letter-spacing: -0.02em;
+  color: var(--roman-silver);
+  padding-left: 10px;
+}
+.heart {
+  display: inline-block;
+  text-align: end;
+  width: 150px;
+}
+.heart-icon {
+  font-size: 22px;
+  margin-top: 10px;
+  color: var(--roman-silver);
+}
+.Trip-rome-complete {
+  display: flex;
+  position: absolute;
+  background-color: var(--white);
+  right: -70px;
+  height: 80px;
+  top: 210px;
+  border-radius: 15px;
+
+  box-shadow: 0px 0px 80px 0px #00000034;
+}
+.Trip-rome-complete img {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.flight-statistics {
+  padding-left: 10px;
+  background-color: var(--white);
+  width: 200px;
+  border-radius: 15px;
+}
+.progress-bar {
+  width: 170px;
+  height: 5px;
+  background-color: var(--cultured);
+  position: absolute;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.bar {
+  width: 40%;
+  height: 100%;
+  background-color:var(--medium-purple);
+  position: absolute;
+  border-radius: 5px;
 }
