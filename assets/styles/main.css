@@ -17,6 +17,9 @@
   --roman-silver: #84829a;
   --cultured: #f5f5f5;
   --medium-purple: #8a79df;
+  --majorelle-blue: #6246e5;
+  --pale-lavender: #dfd7f9;
+  --tomic-tangerine: #ff946d;
 }
 
 body {
@@ -113,24 +116,12 @@ select {
   font-family: "Volkhov", serif;
   font-size: 84px;
   font-weight: 700;
-  line-height: 89px;
-  font-family: Volkhov;
-  font-size: 84px;
-  font-weight: 700;
-  line-height: 89px;
-  letter-spacing: -0.04em;
   color: var(--space-cadet);
 }
 .content-page1 h2 .enjoy {
   font-family: "Volkhov", serif;
   font-size: 84px;
   font-weight: 700;
-  line-height: 89px;
-  font-family: Volkhov;
-  font-size: 84px;
-  font-weight: 700;
-  line-height: 89px;
-  letter-spacing: -0.04em;
   color: var(--space-cadet);
   position: relative;
   z-index: -1;
@@ -229,7 +220,6 @@ select {
 }
 .btn-link input {
   margin-top: 15px;
-  margin-right: 70px;
   padding: 10px 20px;
   background-color: var(--orange-web);
   border: none;
@@ -240,8 +230,28 @@ select {
 }
 .btn-link a {
   margin-top: 28px;
-  width: 100px;
   color: var(--charleston-green);
+}
+@media (max-width: 550px) {
+  .content-page1 h2 {
+    font-size: 35px;
+  }
+  .content-page1 .content-p2 {
+    font-size: 15px;
+  }
+  .content-page1 h2 .enjoy {
+    font-size: 35px;
+  }
+  .content-page1 .btn-link input {
+    width: 130px;
+    margin: 10px 0px;
+  }
+  .content-page1 .btn-link img {
+    width: 100px;
+  }
+  .content-page1 .btn-link a {
+    font-size: 15px;
+  }
 }
 .title-page2 {
   padding-top: 50px;
@@ -332,7 +342,6 @@ select {
   height: 100px;
   position: absolute;
   top: 10px;
-  right: px;
   z-index: -1;
 }
 .Customization::after {
@@ -354,10 +363,19 @@ select {
     width: 70px;
   }
 }
-
-.continter {
-  padding: 50px 20px;
+@media (max-width: 550px) {
+  .title-page2 p {
+    font-size: 14px;
+  }
+  .title-page2 h2 {
+    font-size: 30px;
+  }
+  .offer-services {
+    display: flex;
+    justify-content: center;
+  }
 }
+
 .title-page3 {
   text-align: center;
   padding-bottom: 10px;
@@ -450,7 +468,11 @@ select {
     margin: 20px;
   }
 }
-@media (max-width: 992px) {
+
+@media (max-width: 550px) {
+  .prodect-end::after {
+    background-image: none;
+  }
 }
 
 .page4 .continer {
@@ -466,7 +488,7 @@ select {
   font-size: 50px;
   font-weight: 700;
   line-height: 64.5px;
-  width: 500px;
+  width: 400px;
   color: var(--yankees-blue);
   padding-bottom: 20px;
 }
@@ -594,11 +616,11 @@ select {
 .flight-statistics {
   padding-left: 10px;
   background-color: var(--white);
-  width: 200px;
+  width: 150px;
   border-radius: 15px;
 }
 .progress-bar {
-  width: 170px;
+  width: 120px;
   height: 5px;
   background-color: var(--cultured);
   position: absolute;
@@ -629,6 +651,27 @@ select {
 .flight-statistics span {
   color: var(--black);
 }
+@media (max-width: 765px) {
+  .page4 .elements .booking-flights {
+    width: 300px;
+  }
+  .page4 .continer {
+    justify-content: center;
+  }
+  .page4 .elements .booking-flights .title h3 {
+    font-size: 30px;
+  }
+  .trip-to-greece {
+    width: 370px;
+  }
+
+  @media (max-width: 500px) {
+    .Trip-rome-complete {
+      display: none;
+    }
+  }
+}
+
 .page5 .continter {
   display: flex;
   justify-content: space-around;
@@ -646,10 +689,9 @@ select {
   font-family: Volkhov;
   font-size: 50px;
   font-weight: 700;
-  line-height: 64.5px;
   width: 409px;
-height: 130px;
-color: var(--yankees-blue);
+  height: 130px;
+  color: var(--yankees-blue);
 }
 .page5 .content {
   width: 504px;
@@ -659,37 +701,228 @@ color: var(--yankees-blue);
   box-shadow: 0px 100px 80px 0px #0000001e;
   position: relative;
 }
-.img-chris-thomas{
+.img-chris-thomas {
   position: absolute;
   left: -30px;
   top: -50px;
 }
-.page5 .content h4{
+.page5 .content h4 {
   padding-top: 50px;
 }
-.chris-thomas{
+.chris-thomas {
   margin-top: 30px;
 }
-.chris-thomas h5{
-padding-left: 9px;
-font-size: 18px;
-font-weight: 600;
-line-height: 27px;
-color: var(--Dark-electric-blue);
+.chris-thomas h5 {
+  padding-left: 9px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: var(--Dark-electric-blue);
 }
-.chris-thomas p{
+.chris-thomas p {
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
   color: var(--Dark-electric-blue);
+}
+@media (max-width: 952px) {
+  .testimonials {
+    padding-bottom: 70px;
   }
-  @media (max-width:952px){
-    .testimonials{
-      padding-bottom:70px;
-    }
-    .img-chris-thomas{
-        position: absolute;
-        left: 227px;
-        top: -50px;
-      }
+  .img-chris-thomas {
+    position: absolute;
+    left: 227px;
+    top: -50px;
   }
+}
+@media (max-width: 765px) {
+  .testimonials h2 {
+    font-size: 40px;
+  }
+}
+.companys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+}
+.companys img {
+  padding: 0px 15px;
+}
+.company-expedia {
+  box-shadow: 10px 100px 80px 20px #00000021;
+  border-radius: 30px;
+}
+@media (max-width: 765px) {
+  .page6 img {
+    margin: 20px 0px;
+  }
+}
+.page7 .continar,
+.page7 .continar .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page7 .continar .content {
+  width: 80%;
+  height: 407px;
+  text-align: center;
+  background-color: var(--pale-lavender);
+  border-radius: 150px 25px 25px 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+.page7 .continar .content .icons-send {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+}
+.page7 .continar .content .background-img {
+  position: absolute;
+  right: -78px;
+  bottom: -100px;
+}
+
+.page7 .continar .content p {
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 54px;
+  margin: auto;
+  width: 75%;
+  color: var(--yankees-blue);
+}
+.page7 .continar .content input[type="email"] {
+  width: 50%;
+  height: 68px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 15px;
+  padding: 5px 15px;
+}
+.page7 .continar .content input[type="submit"] {
+  width: 10%;
+  height: 68px;
+  border-radius: 10px;
+  font-size: 19px;
+  outline: none;
+  border: none;
+  background-color: var(--tomic-tangerine);
+  color: var(--white);
+}
+@media (max-width: 953px) {
+  .page7 .continar .content .icons-send {
+    left: 30px;
+    top: -30px;
+  }
+  .page7 .continar .content p {
+    font-size: 25px;
+  }
+
+  .page7 .continar .content input[type="submit"] {
+    width: 140px;
+  }
+}
+@media (max-width: 765px) {
+  .page7 .continar .content p {
+    font-size: 19px;
+    line-height: 40px;
+    width: 75%;
+  }
+
+  .page7 .continar .content .background-img {
+    left: 10px;
+  }
+  .page7 .continar .content .background-img img {
+    width: 120px;
+    height: 120px;
+  }
+  .page7 .continar .content input[type="submit"] {
+    width: 105px;
+  }
+  .page7 .continar .content {
+    height: 340px;
+  }
+  .page7 .continar .content .background-img {
+    display: none;
+  }
+}
+footer .page8 .continar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+footer .page8 .continar .company a,
+footer .page8 .continar .contact a,
+footer .page8 .continar .more a,
+footer .page8 .continar .dowenlod p {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.41px;
+  color: var(--Dark-electric-blue);
+}
+footer .page8 .continar .company,
+footer .page8 .continar .contact,
+footer .page8 .continar .more,
+footer .page8 .continar .dowenlod {
+  padding: 25px 30px;
+}
+footer .page8 .continar .jadoo h3 {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 66px;
+  color: var(--yankees-blue);
+  padding-bottom: 20px;
+}
+footer .page8 .continar .jadoo p {
+  color: var(--Dark-electric-blue);
+}
+footer .page8 .continar .jadoo p {
+  width: 207px;
+}
+footer .page8 .continar h4 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26.15px;
+  padding-bottom: 20px;
+}
+footer .page8 .continar .dowenlod i {
+  padding: 10px;
+  margin: 5px;
+  background-color: var(--cultured);
+  border-radius: 15px;
+}
+footer .page8 .continar .dowenlod p {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 550px) {
+  .content-page1 h2 {
+    font-size: 35px;
+  }
+  .content-page1 .content-p2 {
+    font-size: 16px;
+  }
+  .content-page1 h2 .enjoy {
+    font-size: 35px;
+  }
+  .content-page1 .btn-link input {
+    width: 130px;
+    margin: 10px 0px;
+  }
+  .content-page1 .btn-link img {
+    width: 100px;
+  }
+  .content-page1 .btn-link a {
+    font-size: 15px;
+  }
+}
